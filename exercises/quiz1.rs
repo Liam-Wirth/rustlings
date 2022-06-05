@@ -24,3 +24,10 @@ fn verify_test() {
     assert_eq!(80, price2);
     assert_eq!(65, price3);
 }
+pub fn calculate_apple_price(quantity: i32) -> i32 {
+if(quantity >= 40 ){
+    return quantity
+} else {
+    return quantity * 2
+}
+}
