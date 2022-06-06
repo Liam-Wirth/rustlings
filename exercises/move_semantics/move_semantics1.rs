@@ -1,15 +1,15 @@
 // move_semantics1.rs
 // Make me compile! Execute `rustlings hint move_semantics1` for hints :)
 
-// I AM NOT DONE
 
 fn main() {
+    //a vector is an array
     let vec0 = Vec::new();
-
-    let vec1 = fill_vec(vec0);
+//not sure why this has to be mutable?
+    let mut vec1 = fill_vec(vec0);
 
     println!("{} has length {} content `{:?}`", "vec1", vec1.len(), vec1);
-
+// this is why it has to be mutable I guess, cause I'm pushing the value 88 to the vector
     vec1.push(88);
 
     println!("{} has length {} content `{:?}`", "vec1", vec1.len(), vec1);
