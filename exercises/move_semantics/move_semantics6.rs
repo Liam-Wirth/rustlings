@@ -14,7 +14,6 @@ fn main() {
 
     string_uppercase(data);
 }
-#
 // Should not take ownership
 fn get_char(data: &String) -> char {
     data.chars().last().unwrap()
